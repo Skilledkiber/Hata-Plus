@@ -1,35 +1,36 @@
 @font-face {
-    font-family: 'Roboto Slab';
-    src: url('../fonts/RobotoSlab-Medium.woff2') format('woff2'),
-        url('../fonts/RobotoSlab-Medium.woff') format('woff'),
-        url('../fonts/RobotoSlab-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+   font-family: 'Roboto Slab';
+   src: url('../fonts/RobotoSlab-Medium.woff2') format('woff2'),
+      url('../fonts/RobotoSlab-Medium.woff') format('woff'),
+      url('../fonts/RobotoSlab-Medium.ttf') format('truetype');
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto Slab';
-    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
-        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
-        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+   font-family: 'Roboto Slab';
+   src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+      url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+      url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto Slab';
-    src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
-        url('../fonts/RobotoSlab-Regular.woff') format('woff'),
-        url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+   font-family: 'Roboto Slab';
+   src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+      url('../fonts/RobotoSlab-Regular.woff') format('woff'),
+      url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
 }
 
 * {
    margin: 0px;
+   box-sizing: border-box;
 }
 
 hr {
@@ -78,6 +79,9 @@ sup {
 }
 
 .top-bgc {
+   width: 100%;
+   position: fixed;
+   top: 0;
    background-color: #1f1f56;
 }
 
@@ -229,6 +233,7 @@ sup {
 
 .main-block {
    margin-top: 40px;
+   margin-bottom: 50px;
 }
 
 .projects h2 {
@@ -301,16 +306,16 @@ sup {
    transition: 0.3s;
 }
 
-.menu > li > a {
+.menu>li>a {
    position: relative;
 }
 
-.menu > li:hover > a {
+.menu>li:hover>a {
    color: #fff;
    background-color: #fd8300;
 }
 
-.menu > li > a::before {
+.menu>li>a::before {
    content: "";
    position: absolute;
    top: 50%;
@@ -323,7 +328,7 @@ sup {
    transition: all 1s ease;
 }
 
-.menu > li:hover > a::before {
+.menu>li:hover>a::before {
    border-top-color: #fff;
    border-right-color: #fff;
    transform: translateY(-50%) rotate(135deg);
@@ -343,7 +348,7 @@ sup {
    visibility: hidden;
 }
 
-.dropdown li > a:hover {
+.dropdown li>a:hover {
    background-color: #cecedd;
 }
 
@@ -356,4 +361,38 @@ sup {
    max-height: 1000px;
    visibility: visible;
    transition: max-height 1.5s ease;
+}
+
+.footer {
+   background-color: #ededf5;
+   padding-top: 42px;
+   padding-bottom: 42px;
+}
+
+.bottom-nav a {
+   text-decoration: none;
+   font-size: 14px;
+   line-height: 26px;
+   color: #666666;
+   font-family: "Arial";
+   transition: 0.3s;
+}
+
+.bottom-nav li:hover>a {
+   text-decoration: underline;
+   color: #fd8300;
+}
+
+.author {
+   background-color: #dcdce6;
+}
+
+.author p {
+   text-align: center;
+   padding: 15px 0;
+   font-size: 13px;
+   line-height: 18px;
+   color: #9999a6;
+   font-family: "Arial";
+   text-align: center;
 }
