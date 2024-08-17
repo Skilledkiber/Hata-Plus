@@ -49,10 +49,6 @@ button {
    cursor: url(../images/pointer.cur), pointer;
 }
 
-.flex {
-   column-gap: 30px;
-}
-
 figcaption h3 {
    padding-top: 15px;
    padding-bottom: 12px;
@@ -84,6 +80,7 @@ header {
 
 .top-bgc {
    width: 100%;
+   padding: 15.5px 0;
    position: fixed;
    top: 0;
    background-color: #1f1f56;
@@ -99,6 +96,7 @@ header {
 .flex {
    display: flex;
    justify-content: space-between;
+   column-gap: 30px;
 }
 
 .menu-top {
@@ -131,25 +129,39 @@ header {
 .social-networks a {
    display: block;
    background: url(../images/sprite1.png) no-repeat;
-   margin-right: 25px;
 }
 
 a.fb {
    width: 11px;
    height: 19px;
    background-position: -63px -24px;
+   transition: 0.3s;
+}
+
+a.fb:hover {
+   background-position: -63px -2px;
 }
 
 a.tw {
    width: 19px;
    height: 16px;
    background-position: -76px -27px;
+   transition: 0.3s;
+}
+
+a.tw:hover {
+   background-position: -76px -5px;
 }
 
 a.in {
    width: 20px;
    height: 20px;
    background-position: -97px -23px;
+   transition: 0.3s;
+}
+
+a.in:hover {
+   background-position: -97px -1px;
 }
 
 .contacts {
@@ -176,6 +188,24 @@ a.in {
    color: #fd8300;
 }
 
+.first {
+   position: relative;
+}
+
+.first:before {
+   content: "";
+   position: absolute;
+   left: 5px;
+   width: 17px;
+   height: 17px;
+   background: url(../images/sprite1.png) no-repeat;
+   background-position: -3px -4px;
+}
+
+.first:hover:before {
+   background-position: -3px -26px;
+}
+
 .messengers a {
    padding-left: 30px;
    text-decoration: none;
@@ -189,6 +219,42 @@ a.in {
 .messengers a:hover {
    color: #fd8300;
    text-decoration: underline;
+}
+
+.email a {
+   position: relative;
+}
+
+.email a:before {
+   content: "";
+   position: absolute;
+   left: 5px;
+   width: 18px;
+   height: 13px;
+   background: url(../images/sprite1.png) no-repeat;
+   background-position: -43px -8px;
+}
+
+.email a:hover:before {
+   background-position: -43px -30px;
+}
+
+.skype a {
+   position: relative;
+}
+
+.skype a:before {
+   content: "";
+   position: absolute;
+   left: 5px;
+   width: 19px;
+   height: 19px;
+   background: url(../images/sprite1.png) no-repeat;
+   background-position: -22px -2px;
+}
+
+.skype a:hover:before {
+   background-position: -22px -24px;
 }
 
 .button a {
