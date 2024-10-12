@@ -78,9 +78,12 @@ header {
    padding-top: 55px;
 }
 
+.wrap-header {
+   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 .top-bgc {
    width: 100%;
-   padding: 15.5px 0;
    position: fixed;
    top: 0;
    background-color: #1f1f56;
@@ -108,7 +111,13 @@ header {
    column-gap: 25px;
 }
 
+.text-top >li>a:hover {
+   color: #fd8300;
+}
+
 .text-top a {
+   display: block;
+   padding: 15.5px 0;
    text-decoration: none;
    font-size: 14px;
    letter-spacing: 2px;
@@ -119,7 +128,110 @@ header {
 }
 
 .text-top a:hover {
-   color: #fd8300;
+   color: #fff;
+}
+
+.appearance {
+   position: relative;
+}
+
+.appearance-1 {
+   position: relative;
+}
+
+.fallout {
+   position: absolute;
+   top: calc(100% + 5px);
+   display: none;
+   width: 100%;
+   min-width: 140px;
+   max-height: 0;
+   border-radius: 3px;
+}
+
+.fallout::before {
+   content: "";
+   position: absolute;
+   top: -5px;
+   width: 100%;
+   display: block;
+   border-top: 5px solid transparent;
+}
+
+.fallout li {
+   background-color: #e3e3eb;
+}
+
+.fallout li a {
+   letter-spacing: 2px;
+   line-height: 24px;
+   color: #25252c;
+   padding: 10px;
+   font-size: 12px;
+   display: block;
+}
+
+.fallout li a:hover {
+   background-color: #fd8300;
+}
+
+.fallout a {
+   position: relative;
+}
+
+.fallout>li>a::before {
+   content: "";
+   position: absolute;
+   top: 50%;
+   right: 12px;
+   width: 8px;
+   height: 8px;
+   border-top: 2px solid #666666;
+   border-right: 2px solid #666666;
+   transform: translateY(-50%) rotate(45deg);
+   transition: all 1s ease;
+}
+
+.fallout>li:hover>a::before {
+   border-top-color: #fff;
+   border-right-color: #fff;
+   transform: translateY(-50%) rotate(135deg);
+}
+
+.fallout-1 {
+   display: none;
+   width: 100%;
+   position: absolute;
+   left: calc(100% + 5px);
+   top: 0px;
+   border-radius: 3px;
+}
+
+.fallout-1::before {
+   content: "";
+   position: absolute;
+   left: -5px;
+   height: 100%;
+   display: block;
+   border-left: 5px solid transparent;
+}
+
+.fallout-1>li:first-child {
+   border-radius: 3px 3px 0 0;
+}
+
+.fallout-1>li:last-child {
+   border-radius: 0 0 3px 3px;
+}
+
+.fallout-1 li + li {
+   border-top: 1px solid #cecedd;
+}
+
+.text-top>li:hover .fallout,
+.appearance-1:hover .fallout-1 {
+   display: block;
+   transition: max-height 1.5s ease;
 }
 
 .social-networks {
@@ -338,11 +450,13 @@ figcaption a {
 }
 
 figcaption>a:hover~h3 {
+   color: #fd8300;
    text-decoration: underline;
 }
 
 .projects h3 {
    text-decoration: none;
+   transition: 0.3s;
 }
 
 .projects h2 {
@@ -516,8 +630,16 @@ figcaption>a:hover~h3 {
    text-align: center;
 }
 
+tbody tr {
+   transition: 0.3s;
+}
+
+tbody tr:hover {
+   background-color: #fd8300;
+}
+
 .table h2 {
-   margin-top: 20px;
+   margin-top: 40px;
    font-size: 24px;
    line-height: 24px;
    color: #24242b;
@@ -537,10 +659,11 @@ figcaption>a:hover~h3 {
 }
 
 .table table {
+   border-radius: 3px;
    width: 960px;
    margin-bottom: 30px;
-   border: 1px solid red;
    border-collapse: collapse;
+   overflow: hidden;
 }
 
 .table th {
@@ -564,12 +687,36 @@ figcaption>a:hover~h3 {
 }
 
 .table td {
-   padding: 15px 15px 15px 15px;
+   text-align: center;
+   padding: 8px 15px 8px 15px;
    font-size: 14px;
    line-height: 24px;
    color: #666666;
    font-family: "Arial";
-   border: 1px solid #cecedd;
+}
+
+.table td + td {
+   border-left: 1px solid #cecedd;
+}
+
+.table tr + tr {
+   border-top: 1px solid #cecedd;
+}
+
+.table td:first-child {
+   text-align: left;
+}
+
+.table td:last-child {
+   text-align: right;
+}
+
+.table th:first-child {
+   text-align: left;
+}
+
+.table th:last-child {
+   text-align: right;
 }
 
 .table-bottom span {
