@@ -179,8 +179,10 @@ header {
    display: block;
 }
 
-.fallout li a:hover {
+.fallout li a:hover,
+.fallout-1 li a:hover {
    background-color: #fd8300;
+   border-radius: 3px;
 }
 
 .fallout a {
@@ -232,15 +234,18 @@ header {
    border-left: 5px solid transparent;
 }
 
-.fallout-1>li:first-child {
+.fallout-1>li:first-child,
+.fallout>li:first-child {
    border-radius: 3px 3px 0 0;
 }
 
-.fallout-1>li:last-child {
+.fallout-1>li:last-child,
+.fallout>li:last-child {
    border-radius: 0 0 3px 3px;
 }
 
-.fallout-1 li+li {
+.fallout-1 li+li,
+.fallout li+li {
    border-top: 1px solid #cecedd;
 }
 
@@ -316,6 +321,10 @@ a.in:hover {
    color: #fd8300;
 }
 
+.tels a::before {
+   transition: 0.3s;
+}
+
 .first {
    position: relative;
 }
@@ -362,6 +371,7 @@ a.in:hover {
    height: 13px;
    background: url(../images/sprite1.png) no-repeat;
    background-position: -43px -8px;
+   transition: 0.3s;
 }
 
 .email a:hover:before {
@@ -381,6 +391,7 @@ a.in:hover {
    height: 19px;
    background: url(../images/sprite1.png) no-repeat;
    background-position: -22px -2px;
+   transition: 0.3s;
 }
 
 .skype a:hover:before {
@@ -729,10 +740,6 @@ tbody tr:hover {
    text-align: right;
 }
 
-.table th:first-child {
-   text-align: left;
-}
-
 .table th:last-child {
    text-align: right;
 }
@@ -765,4 +772,24 @@ tbody tr:hover {
    color: #fd8300;
    font-weight: bold;
    font-family: "Arial";
+}
+
+.first-th {
+   width: 295px;
+}
+
+.third-th {
+   width: 120px;
+}
+
+.fourth-th {
+   width: 265px;
+}
+
+.fifth-th {
+   width: 220px;
+}
+
+.last-th {
+   width: 120px;
 }
