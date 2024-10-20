@@ -544,6 +544,9 @@ figcaption>a:hover~h3 {
 }
 
 .categories nav {
+   min-width: 220px;
+   position: sticky;
+   top: 70px;
    border-radius: 3px;
    overflow: hidden;
 }
@@ -921,9 +924,15 @@ tbody tr:hover {
    font-family: "Arial";
 }
 
+.main-bottom {
+   display: flex;
+   justify-content: space-between;
+}
+
 .map {
    position: relative;
    display: flex;
+   
 }
 
 .map iframe {
@@ -942,64 +951,69 @@ tbody tr:hover {
    font-family: "Roboto Slab";
 }
 
-.first-in {
-   position: absolute;
-   left: 497px;
-   top: 40px;
+.form p {
+   font-size: 14px;
+   line-height: 24px;
+   margin-bottom: 20px;
+   color: #24242b;
+   font-weight: 700;
+   text-align: left;
+   font-family: "Roboto Slab";
+}
+
+.inputs {
+   column-gap: 10px;
+}
+
+.first-in input {
+   margin-bottom: 10px;
    width: 229px;
+   border: 1px solid #c5c5d4;
    height: 41px;
 }
 
 .second-in {
-   position: absolute;
-   left: 736px;
-   top: 40px;
-   width: 229px;
-   height: 41px;
-}
-
-.third-in {
-   position: absolute;
-   bottom: 188px;
-   right: -4px;
    width: 467px;
    height: 41px;
+   margin-bottom: 9px;
 }
 
-.fourth-in {
-   position: absolute;
-   right: -4px;
-   bottom: 72px;
+.second-in input {
+   width: 100%;
+   height: 100%;
+   background-color: #ffffff;
+   border: 1px solid #c5c5d4;
+   border-radius: 3px;
+}
+
+.third-in input {
    width: 467px;
    height: 106px;
-}
-
-.submit {
-   position: absolute;
-   right: 593px;
-   bottom: -162px;
-   padding: 12px 35px;
-   background-color: #fd8300;
-   font-size: 14px;
-   line-height: 24px;
-   color: #ffffff;
-   text-decoration: none;
-   font-weight: bold;
-   font-family: "Arial";
-   border-radius: 21px;
-   transition: 0.3s;
-}
-
-.submit:hover {
-   text-decoration: underline;
-   background-color: #1f1f56;
+   border: 1px solid #c5c5d4;
 }
 
 ::placeholder {
-   padding-left: 10px;
    font-size: 13px;
    line-height: 21px;
    color: #9999a6;
    font-style: italic;
    font-family: "Arial";
+   padding-left: 10px;
+}
+
+.form-bottom a {
+   width: 140px;
+   height: 41px;
+   border-radius: 21px;
+   border: none;
+   padding: 12px 30px;
+   background-color: #fd8300;
+   text-decoration: none;
+   font-size: 14px;
+   line-height: 1.7em;
+   color: #ffffff;
+   font-weight: bold;
+   font-family: "Arial";
+   text-align: center;
+   transition: 0.3s;
 }
