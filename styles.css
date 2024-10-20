@@ -31,6 +31,7 @@
 * {
    margin: 0px;
    box-sizing: border-box;
+   scroll-behavior: smooth;
 }
 
 hr {
@@ -690,6 +691,7 @@ tbody tr:hover {
 .table table {
    border-radius: 3px;
    width: 960px;
+   height: 315px;
    margin-bottom: 30px;
    border-collapse: collapse;
    overflow: hidden;
@@ -792,4 +794,212 @@ tbody tr:hover {
 
 .last-th {
    width: 120px;
+}
+
+.columns {
+   display: flex;
+   z-index: 52;
+}
+
+.main h1 {
+   margin-top: 41px;
+   margin-bottom: 27px;
+   font-size: 24px;
+   line-height: 24px;
+   color: #24242b;
+   font-weight: 700;
+   font-family: "Roboto Slab";
+}
+
+.first-p {
+   margin-bottom: 20px;
+   font-size: 14px;
+   line-height: 24px;
+   color: #24242b;
+   font-weight: 700;
+   font-family: "Roboto Slab";
+}
+
+.second-p {
+   margin-bottom: 15px;
+   font-size: 14px;
+   line-height: 21px;
+   color: #666666;
+   font-family: "Arial";
+}
+
+.first-a,
+.second-a {
+   font-size: 18px;
+   line-height: 24px;
+   text-decoration: none;
+   color: #25252c;
+   font-weight: bold;
+   font-family: "Arial";
+   transition: 0.3s;
+}
+
+.first-a:hover,
+.second-a:hover,
+.third-a:hover {
+   color: #fd8300;
+   text-decoration: underline;
+}
+
+.second-a {
+   display: inline-block;
+   margin-top: 12px;
+}
+
+.third-a {
+   display: inline-block;
+   margin-top: 15px;
+   font-size: 16px;
+   line-height: 24px;
+   text-decoration: underline;
+   color: #25252c;
+   font-family: "Arial";
+   transition: 0.3s;
+}
+
+.advice {
+   margin-top: 92px;
+   margin-left: 88px;
+}
+
+.first-p-1 {
+   margin-bottom: 22px;
+   font-size: 14px;
+   line-height: 24px;
+   color: #24242b;
+   font-weight: 700;
+   font-family: "Roboto Slab";
+}
+
+.second-p-1 {
+   margin-bottom: 14px;
+   font-size: 14px;
+   line-height: 21px;
+   color: #666666;
+   font-family: "Arial";
+}
+
+.first-a-1 {
+   display: inline-block;
+   margin-bottom: 16px;
+   font-size: 18px;
+   text-decoration: none;
+   line-height: 24px;
+   color: #25252c;
+   font-weight: bold;
+   font-family: "Arial";
+   transition: 0.3s;
+}
+
+.first-a-1:hover {
+   text-decoration: underline;
+   color: #fd8300;
+}
+
+.details {
+   margin-top: 94px;
+   margin-left: 163px;
+}
+
+.second-p-2 {
+   margin-bottom: 19px;
+   font-size: 14px;
+   line-height: 21px;
+   color: #666666;
+   font-family: "Arial";
+}
+
+.third-p {
+   font-size: 14px;
+   line-height: 21px;
+   color: #666666;
+   font-family: "Arial";
+}
+
+.map {
+   position: relative;
+   display: flex;
+}
+
+.map iframe {
+   width: 466px;
+   height: 380px;
+   border: none;
+   margin-top: -60px;
+}
+
+.map p {
+   margin-left: 30px;
+   font-size: 14px;
+   line-height: 24px;
+   color: #24242b;
+   font-weight: 700;
+   font-family: "Roboto Slab";
+}
+
+.first-in {
+   position: absolute;
+   left: 497px;
+   top: 40px;
+   width: 229px;
+   height: 41px;
+}
+
+.second-in {
+   position: absolute;
+   left: 736px;
+   top: 40px;
+   width: 229px;
+   height: 41px;
+}
+
+.third-in {
+   position: absolute;
+   bottom: 188px;
+   right: -4px;
+   width: 467px;
+   height: 41px;
+}
+
+.fourth-in {
+   position: absolute;
+   right: -4px;
+   bottom: 72px;
+   width: 467px;
+   height: 106px;
+}
+
+.submit {
+   position: absolute;
+   right: 593px;
+   bottom: -162px;
+   padding: 12px 35px;
+   background-color: #fd8300;
+   font-size: 14px;
+   line-height: 24px;
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: bold;
+   font-family: "Arial";
+   border-radius: 21px;
+   transition: 0.3s;
+}
+
+.submit:hover {
+   text-decoration: underline;
+   background-color: #1f1f56;
+}
+
+::placeholder {
+   padding-left: 10px;
+   font-size: 13px;
+   line-height: 21px;
+   color: #9999a6;
+   font-style: italic;
+   font-family: "Arial";
 }
