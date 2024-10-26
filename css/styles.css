@@ -677,7 +677,7 @@ tbody tr:hover {
    line-height: 24px;
    color: #24242b;
    font-weight: 700;
-   font-family: "Roboto Slab";
+   font-family: "Roboto Slab", sans-serif;
 }
 
 .table p {
