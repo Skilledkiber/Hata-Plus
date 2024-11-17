@@ -484,6 +484,14 @@ figcaption>a:hover~h3 {
    text-decoration: underline;
 }
 
+.projects {
+   margin-bottom: 50px;
+}
+
+.projects a {
+   z-index: 2;
+}
+
 .projects h3 {
    text-decoration: none;
    transition: 0.3s;
@@ -495,6 +503,19 @@ figcaption>a:hover~h3 {
    color: #24242b;
    font-weight: 700;
    font-family: "Roboto Slab";
+}
+
+.projects img {
+   transition: 0.5s;
+}
+
+.projects picture {
+   display: inline-block;
+   overflow: hidden;
+}
+
+.projects a:hover~picture>img {
+   transform: scale(1.1);
 }
 
 .about-us {
@@ -629,7 +650,6 @@ figcaption>a:hover~h3 {
 }
 
 .footer {
-   margin-top: 50px;
    background-color: #ededf5;
    padding-top: 42px;
    padding-bottom: 42px;
@@ -931,16 +951,19 @@ tbody tr:hover {
 }
 
 .map {
+   min-width: 467px;
+   height: 367px;
    position: relative;
    display: flex;
    overflow: hidden;
 }
 
 .map iframe {
-   width: 466px;
-   height: 380px;
+   position: absolute;
    border: none;
-   margin-top: -60 px;
+   width: 100%;
+   height: 100%;
+   top: -60px;
 }
 
 .map p {
@@ -1002,26 +1025,77 @@ tbody tr:hover {
    padding-left: 10px;
 }
 
-.form-bottom a {
+textarea::placeholder {
+   padding-top: 10px;
+}
+
+.third-in textarea {
+   resize: vertical;
+   width: 467px;
+   height: 106px;
+   margin-bottom: 12px;
+   z-index: 3;
+}
+
+.form-bottom {
+   z-index: 0;
+}
+
+.form-bottom button {
    position: absolute;
-   bottom: 12px;
-   width: 141px;
-   height: 45px;
+   width: 140px;
+   height: 41px;
    border-radius: 21px;
    border: none;
-   padding: 12px 30px;
    background-color: #fd8300;
-   text-decoration: none;
    font-size: 14px;
-   line-height: 24px;
+   text-decoration: none;
+   line-height: 1.7em;
    color: #ffffff;
    font-weight: bold;
    font-family: "Arial";
    text-align: center;
-   transition: 0.3s;
+   transition: all .3s ease;
 }
 
-.form-bottom a:hover {
+.form-bottom button:hover {
+   cursor: url(../images/pointer.cur), pointer;
    background-color: #1f1f56;
    text-decoration: underline;
+}
+
+.form-bottom input {
+   position: absolute;
+   bottom: 72px;
+   right: 290px;
+   appearance: none;
+   background-color: #fff;
+   border: 1px solid #c5c5d4;
+   border-radius: 3px;
+   width: 15px;
+   height: 15px;
+}
+
+.form-bottom label {
+   position: relative;
+   position: absolute;
+   bottom: 69px;
+   right: 60px;
+   font-size: 13px;
+   line-height: 21px;
+   color: #666666;
+   font-family: "Arial";
+}
+
+.form-bottom input:checked+label:before {
+   content: "";
+   position: absolute;
+   bottom: 8.5px;
+   left: -21px;
+   width: 6px;
+   height: 3px;
+   border: 3px solid black;
+   transform: rotate(-45deg);
+   border-top: none;
+   border-right: none;
 }

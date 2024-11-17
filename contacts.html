@@ -94,27 +94,28 @@
             <hr>
             <div class="main-bottom">
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1k8cD3BEYYI7mCF1kgdJDMdEC3Rvp-W4&ehbc=2E312F"
-                        width="640" height="480"></iframe>
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Os29H6CU5pCfI7MwdoN93PbzYRM4VnE&ehbc=2E312F"></iframe>
                 </div>
                 <div class="form">
                     <p>Форма зворотнього зв’язку</p>
                     <div class="flex inputs">
                         <div class="first-in">
-                            <input type="text" class="input-text-1" placeholder="Ваше ім’я">
+                            <label for="input-text-1"><input type="text" class="input-text-1" placeholder="Ваше ім’я"></label>
                         </div>
                         <div class="first-in">
-                            <input type="text" class="input-text-1" placeholder="Телефон">
+                            <label for="input-text-1"><input type="text" class="input-text-1" placeholder="Телефон"></label>
                         </div>
                     </div>
                     <div class="second-in">
-                        <input type="text" placeholder="Тема повідомлення">
+                        <label for=""><input type="text" placeholder="Тема повідомлення"></label>
                     </div>
                     <div class="third-in">
-                        <input type="text" placeholder="Текст"></input>
+                        <textarea placeholder="Текст"></textarea>
                     </div>
                     <div class="form-bottom">
-                        <a href="#">Відправити</a>
+                        <button type="submit">Відправити</button>
+                        <input type="checkbox" id="customcheckbox">
+                        <label for="customcheckbox">Я бажаю отримувати останні новини</label>
                     </div>
                 </div>
             </div>
