@@ -42,6 +42,7 @@ hr {
 }
 
 body {
+   position: relative;
    cursor: url(../images/cursor.cur), default;
 }
 
@@ -397,6 +398,68 @@ a.in:hover {
 
 .skype a:hover:before {
    background-position: -22px -24px;
+}
+
+#popup {
+   position: relative;
+   display: none;
+   position: fixed;
+   border-radius: 5px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #fff;
+   padding: 30px 30px 23px;
+   z-index: 51;
+}
+
+#popup h2 {
+   margin-bottom: 19px;
+   font-size: 24px;
+   line-height: 24px;
+   color: #24242b;
+   font-weight: 700;
+   font-family: "Roboto Slab";
+}
+
+#popup input {
+   margin-bottom: 8px;
+   width: 300px;
+   height: 40px;
+   border-radius: 3px;
+   background-color: #ffffff;
+   border: 1px solid #c4c4d3;
+}
+
+#popup button {
+   padding: 13px 110px 13px;
+   border-radius: 22px;
+   border: none;
+   background-color: #fd8300;
+   font-size: 14px;
+   line-height: 24px;
+   color: #ffffff;
+   font-weight: bold;
+   font-family: "Arial";
+   text-align: center
+}
+
+#black {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   z-index: 50;
+   backdrop-filter: blur(2px);
+}
+
+#cancel {
+   position: absolute;
+   top: 14px;
+   right: 15px;
 }
 
 .button a {
@@ -1066,21 +1129,23 @@ textarea::placeholder {
 
 .form-bottom input {
    position: absolute;
-   bottom: 72px;
    right: 290px;
+   bottom: 71px;
    appearance: none;
-   background-color: #fff;
    border: 1px solid #c5c5d4;
-   border-radius: 3px;
    width: 15px;
    height: 15px;
+   border-radius: 3px;
+}
+
+input+label {
+   position: relative;
 }
 
 .form-bottom label {
-   position: relative;
    position: absolute;
-   bottom: 69px;
    right: 60px;
+   bottom: 67px;
    font-size: 13px;
    line-height: 21px;
    color: #666666;
@@ -1090,8 +1155,8 @@ textarea::placeholder {
 .form-bottom input:checked+label:before {
    content: "";
    position: absolute;
-   bottom: 8.5px;
-   left: -21px;
+   bottom: 9.5px;
+   right: 233.3px;
    width: 6px;
    height: 3px;
    border: 3px solid black;
