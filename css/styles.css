@@ -524,6 +524,7 @@ a.in:hover {
 }
 
 .main-block {
+   padding-top: 41px;
    margin-bottom: 50px;
 }
 
@@ -597,12 +598,12 @@ figcaption>a:hover~h3 {
 
 .about-us a {
    display: inline-block;
+   padding-top: 15px;
    font-size: 14px;
    line-height: 1.7em;
    text-decoration: underline;
    color: #fd8300;
    font-weight: bold;
-   
    transition: 0.3s;
 }
 
