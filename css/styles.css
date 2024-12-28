@@ -104,6 +104,20 @@ header {
    column-gap: 30px;
 }
 
+.gp {
+   justify-content: flex-start;
+   column-gap: 162px;
+}
+
+.flex .gap {
+   column-gap: 88px;
+}
+
+.our-office a {
+   display: inline-block;
+   margin-bottom: 12px;
+}
+
 .menu-top {
    align-items: center;
    margin-left: 2px;
@@ -257,10 +271,6 @@ header {
    transition: max-height 1.5s ease;
 }
 
-.social-networks {
-   margin-top: 3px;
-}
-
 .social-networks a {
    display: block;
    background: url(../images/sprite1.png) no-repeat;
@@ -301,7 +311,8 @@ a.in:hover {
 
 .contacts {
    align-items: center;
-   padding: 35px 0;
+   padding: 29px 0;
+   margin-bottom: 41px;
 }
 
 .column {
@@ -424,8 +435,6 @@ a.in:hover {
 
 #popup input {
    margin-bottom: 8px;
-   width: 300px;
-   height: 40px;
    border-radius: 3px;
    background-color: #ffffff;
    border: 1px solid #c4c4d3;
@@ -510,7 +519,6 @@ a.in:hover {
 
 .price {
    display: inline-block;
-   margin-top: 15px;
    font-size: 40px;
    line-height: 24px;
    color: #fd8300;
@@ -528,7 +536,6 @@ a.in:hover {
 }
 
 .main-block {
-   margin-top: 40px;
    margin-bottom: 50px;
 }
 
@@ -595,7 +602,6 @@ figcaption>a:hover~h3 {
 }
 
 .about-us p {
-   width: 677px;
    font-size: 14px;
    line-height: 24px;
    color: #666666;
@@ -604,7 +610,6 @@ figcaption>a:hover~h3 {
 
 .about-us a {
    display: inline-block;
-   margin-top: 20px;
    font-size: 14px;
    line-height: 24px;
    text-decoration: underline;
@@ -755,7 +760,6 @@ tbody tr:hover {
 }
 
 .table h2 {
-   margin-top: 40px;
    font-size: 24px;
    line-height: 24px;
    color: #24242b;
@@ -764,9 +768,6 @@ tbody tr:hover {
 }
 
 .table p {
-   width: 852px;
-   height: 56px;
-   margin-top: 22px;
    margin-bottom: 30px;
    font-size: 14px;
    line-height: 24px;
@@ -776,8 +777,6 @@ tbody tr:hover {
 
 .table table {
    border-radius: 3px;
-   width: 960px;
-   height: 315px;
    margin-bottom: 30px;
    border-collapse: collapse;
    overflow: hidden;
@@ -795,11 +794,9 @@ tbody tr:hover {
 
 .table thead {
    background-color: #1f1f56;
-   height: 70px;
 }
 
 .table tbody {
-   height: 245px;
    background-color: #e3e3eb;
 }
 
@@ -833,8 +830,6 @@ tbody tr:hover {
 }
 
 .table-bottom span {
-   width: 942px;
-   height: 56px;
    font-size: 13px;
    line-height: 21px;
    color: #666666;
@@ -843,7 +838,6 @@ tbody tr:hover {
 
 .table-bottom a {
    display: inline-block;
-   margin-top: 17px;
    font-size: 14px;
    line-height: 24px;
    color: #1f1f56;
@@ -862,33 +856,11 @@ tbody tr:hover {
    font-family: "Arial";
 }
 
-.first-th {
-   width: 295px;
-}
-
-.third-th {
-   width: 120px;
-}
-
-.fourth-th {
-   width: 265px;
-}
-
-.fifth-th {
-   width: 220px;
-}
-
-.last-th {
-   width: 120px;
-}
-
 .columns {
-   display: flex;
-   z-index: 52;
+   z-index: 5;
 }
 
 .main h1 {
-   margin-top: 41px;
    margin-bottom: 27px;
    font-size: 24px;
    line-height: 24px;
@@ -934,23 +906,16 @@ tbody tr:hover {
 
 .second-a {
    display: inline-block;
-   margin-top: 12px;
 }
 
 .third-a {
    display: inline-block;
-   margin-top: 15px;
    font-size: 16px;
    line-height: 24px;
    text-decoration: underline;
    color: #25252c;
    font-family: "Arial";
    transition: 0.3s;
-}
-
-.advice {
-   margin-top: 92px;
-   margin-left: 88px;
 }
 
 .first-p-1 {
@@ -987,11 +952,6 @@ tbody tr:hover {
    color: #fd8300;
 }
 
-.details {
-   margin-top: 94px;
-   margin-left: 163px;
-}
-
 .second-p-2 {
    margin-bottom: 19px;
    font-size: 14px;
@@ -1007,15 +967,9 @@ tbody tr:hover {
    font-family: "Arial";
 }
 
-.main-bottom {
-   position: relative;
-   display: flex;
-   justify-content: space-between;
-}
-
 .map {
-   min-width: 467px;
-   height: 367px;
+   min-width: 466px;
+   min-height: 367px;
    position: relative;
    display: flex;
    overflow: hidden;
@@ -1026,7 +980,7 @@ tbody tr:hover {
    border: none;
    width: 100%;
    height: 100%;
-   top: -60px;
+   top: -72px;
 }
 
 .map p {
@@ -1036,6 +990,10 @@ tbody tr:hover {
    color: #24242b;
    font-weight: 700;
    font-family: "Roboto Slab";
+}
+
+.form {
+   min-width: 467px;
 }
 
 .form p {
@@ -1052,17 +1010,26 @@ tbody tr:hover {
    column-gap: 10px;
 }
 
-.first-in input {
-   margin-bottom: 10px;
-   width: 229px;
-   border: 1px solid #c5c5d4;
-   height: 41px;
+.first-in {
+   min-width: 229px;
 }
 
-.second-in {
-   width: 467px;
-   height: 41px;
-   margin-bottom: 9px;
+.first-in input,
+.second-in input,
+textarea {
+   width: 100%;
+   border-radius: 3px;
+   padding: 12px 15px;
+   margin-bottom: 10px;
+   border: 1px solid #c5c5d4;
+   box-sizing: border-box;
+   outline: none;
+}
+
+textarea {
+   min-height: 106px;
+   resize: vertical;
+   max-height: 150px;
 }
 
 .second-in input {
@@ -1074,8 +1041,6 @@ tbody tr:hover {
 }
 
 .third-in input {
-   width: 467px;
-   height: 106px;
    border: 1px solid #c5c5d4;
 }
 
@@ -1085,17 +1050,10 @@ tbody tr:hover {
    color: #9999a6;
    font-style: italic;
    font-family: "Arial";
-   padding-left: 10px;
-}
-
-textarea::placeholder {
-   padding-top: 10px;
 }
 
 .third-in textarea {
    resize: vertical;
-   width: 467px;
-   height: 106px;
    margin-bottom: 12px;
    z-index: 3;
 }
@@ -1106,10 +1064,9 @@ textarea::placeholder {
 
 .form-bottom button {
    position: absolute;
-   width: 140px;
-   height: 41px;
    border-radius: 21px;
    border: none;
+   padding: 9px 30px;
    background-color: #fd8300;
    font-size: 14px;
    text-decoration: none;
@@ -1127,40 +1084,33 @@ textarea::placeholder {
    text-decoration: underline;
 }
 
-.form-bottom input {
-   position: absolute;
-   right: 290px;
-   bottom: 71px;
-   appearance: none;
-   border: 1px solid #c5c5d4;
-   width: 15px;
-   height: 15px;
-   border-radius: 3px;
+.form-bottom label {
+   display: flex;
+   align-items: center;
 }
 
-input+label {
+.form-bottom input {
+   appearance: none;
+   width: 15px;
+   height: 15px;
+   border: 1px solid #c5c5d4;
+   border-radius: 3px;
+   background-color: #fff;
+}
+
+.parent {
    position: relative;
 }
 
-.form-bottom label {
+.form-bottom:checked + .arrow {
    position: absolute;
-   right: 60px;
-   bottom: 67px;
-   font-size: 13px;
-   line-height: 21px;
-   color: #666666;
-   font-family: "Arial";
-}
-
-.form-bottom input:checked+label:before {
-   content: "";
-   position: absolute;
-   bottom: 9.5px;
-   right: 233.3px;
-   width: 6px;
-   height: 3px;
-   border: 3px solid black;
-   transform: rotate(-45deg);
-   border-top: none;
-   border-right: none;
+   top: ;
+   left: ;
+   display: block;
+   width: 9px;
+   height: 7px;
+   border-top: 4px solid #1f1f56;
+   border-left: 2px solid #1f1f56;
+   transform: translate() rotate();
+   z-index: 52;
 }

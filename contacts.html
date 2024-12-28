@@ -83,55 +83,66 @@
     <main class="main">
         <div class="wrapper">
             <div class="columns">
-                <div class="our-office">
-                    <h1>Контакти</h1>
-                    <p class="first-p">Наш офіс</p>
-                    <p class="second-p">с. Війтівці, Хмельницька обл. 27500</p>
-                    <a class="first-a" href="tel:+380971002525">+38(097) 100-25-25</a> <br>
-                    <a class="second-a" href="tel:+380971002525">+38(097) 100-25-25</a> <br>
-                    <a class="third-a" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
-                </div>
-                <div class="advice">
-                    <p class="first-p-1">Консультація</p>
-                    <p class="second-p-1">менеджер:</p>
-                    <a class="first-a-1" href="tel:+380671231005">+38(067) 123-10-05</a>
-                    <p class="second-p-1">директор:</p>
-                    <a class="first-a-1" href="tel:+380689502791">+38(068) 950-27-91</a>
-                </div>
-                <div class="details">
-                    <p class="first-p-1">Реквізити</p>
-                    <p class="second-p-2">ЄДРПОУ 60045123, ІПН 991097555173 <br>
-                        Св.№59904423</p>
-                    <p class="third-p">Р/р 11137539962221, <br>
-                        Банк ХФ ПАТ КБ «ПРИВАТБАНК»</p>
+                <h1>Контакти</h1>
+                <div class="flex gp">
+                    <div class="flex gap">
+                        <div class="our-office">
+                            <h2 class="first-p">Наш офіс</h2>
+                            <p class="second-p">с. Війтівці, Хмельницька обл. 27500</p>
+                            <a class="first-a" href="tel:+380971002525">+38(097) 100-25-25</a> <br>
+                            <a class="second-a" href="tel:+380971002525">+38(097) 100-25-25</a> <br>
+                            <a class="third-a" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
+                        </div>
+                        <div class="advice">
+                            <h2 class="first-p-1">Консультація</h2>
+                            <p class="second-p-1">менеджер:</p>
+                            <a class="first-a-1" href="tel:+380671231005">+38(067) 123-10-05</a>
+                            <p class="second-p-1">директор:</p>
+                            <a class="first-a-1" href="tel:+380689502791">+38(068) 950-27-91</a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h2 class="first-p-1">Реквізити</h2>
+                        <p class="second-p-2">ЄДРПОУ 60045123, ІПН 991097555173 <br>
+                            Св.№59904423</p>
+                        <p class="third-p">Р/р 11137539962221, <br>
+                            Банк ХФ ПАТ КБ «ПРИВАТБАНК»</p>
+                    </div>
                 </div>
             </div>
             <hr>
-            <div class="main-bottom">
+            <div class="main-bottom flex">
                 <div class="map">
                     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Os29H6CU5pCfI7MwdoN93PbzYRM4VnE&ehbc=2E312F"></iframe>
                 </div>
                 <div class="form">
-                    <p>Форма зворотнього зв’язку</p>
-                    <div class="flex inputs">
-                        <div class="first-in">
-                            <label for="input-text-1"><input type="text" class="input-text-1" placeholder="Ваше ім’я"></label>
+                    <form action="form-connection">
+                        <p>Форма зворотнього зв’язку</p>
+                        <div class="flex inputs">
+                            <div class="first-in">
+                                <label for="input-text-1"><input type="text" class="input-text-1" placeholder="Ваше ім’я"></label>
+                            </div>
+                            <div class="first-in">
+                                <label for="input-text-1"><input type="text" class="input-text-1" placeholder="Телефон"></label>
+                            </div>
                         </div>
-                        <div class="first-in">
-                            <label for="input-text-1"><input type="text" class="input-text-1" placeholder="Телефон"></label>
+                        <div class="second-in">
+                            <label for=""><input type="text" placeholder="Тема повідомлення"></label>
                         </div>
-                    </div>
-                    <div class="second-in">
-                        <label for=""><input type="text" placeholder="Тема повідомлення"></label>
-                    </div>
-                    <div class="third-in">
-                        <textarea placeholder="Текст"></textarea>
-                    </div>
-                    <div class="form-bottom">
-                        <button type="submit">Відправити</button>
-                        <input type="checkbox" id="customcheckbox">
-                        <label for="customcheckbox">Я бажаю отримувати останні новини</label>
-                    </div>
+                        <div class="third-in">
+                            <textarea placeholder="Текст"></textarea>
+                        </div>
+                        <div class="form-bottom flex">
+                            <button type="submit">Відправити</button>
+                            <label>
+                                <span class="parent">
+                                    <input type="checkbox">
+                                    <span class="arrow"></span>
+                                </span>
+                                Я бажаю отримувати останні новини
+                            </label>
+                        </div>
+                    </form>
                 </div>
             </div>
     </main>
