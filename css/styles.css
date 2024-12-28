@@ -43,6 +43,7 @@ hr {
 
 body {
    position: relative;
+   font-family: "Arial";
    cursor: url(../images/cursor.cur), default;
 }
 
@@ -57,14 +58,14 @@ figcaption h3 {
    font-size: 14px;
    color: #1f1f56;
    font-weight: bold;
-   font-family: "Arial";
+   
 }
 
 figcaption p {
    margin-bottom: 8px;
    font-size: 13px;
    color: #9999a6;
-   font-family: "Arial";
+   
 }
 
 ul {
@@ -137,9 +138,8 @@ header {
    text-decoration: none;
    font-size: 14px;
    letter-spacing: 2px;
-   line-height: 24px;
+   line-height: 1.7em;
    color: #b1b1d2;
-   font-family: "Arial";
    transition: 0.3s;
 }
 
@@ -236,9 +236,8 @@ header {
 .fallout-1 a {
    font-size: 12px;
    letter-spacing: 2px;
-   line-height: 24px;
+   line-height: 2em;
    color: #25252c;
-   font-family: "Arial";
 }
 
 .fallout-1::before {
@@ -312,7 +311,6 @@ a.in:hover {
 .contacts {
    align-items: center;
    padding: 29px 0;
-   margin-bottom: 41px;
 }
 
 .column {
@@ -324,9 +322,8 @@ a.in:hover {
    text-decoration: none;
    color: #25252c;
    font-size: 18px;
-   line-height: 24px;
+   line-height: 1.3em;
    font-weight: bold;
-   font-family: "Arial";
    transition: 0.3s;
 }
 
@@ -360,9 +357,8 @@ a.in:hover {
    padding-left: 30px;
    text-decoration: none;
    font-size: 16px;
-   line-height: 24px;
+   line-height: 1.5em;
    color: #25252c;
-   font-family: "Arial";
    transition: 0.3s;
 }
 
@@ -427,7 +423,6 @@ a.in:hover {
 #popup h2 {
    margin-bottom: 19px;
    font-size: 24px;
-   line-height: 24px;
    color: #24242b;
    font-weight: 700;
    font-family: "Roboto Slab";
@@ -446,10 +441,9 @@ a.in:hover {
    border: none;
    background-color: #fd8300;
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    color: #ffffff;
    font-weight: bold;
-   font-family: "Arial";
    text-align: center
 }
 
@@ -476,10 +470,9 @@ a.in:hover {
    padding: 11px 30px;
    text-decoration: none;
    font-size: 16px;
-   line-height: 24px;
+   line-height: 1.5em;
    color: #25252c;
    font-weight: bold;
-   font-family: "Arial";
    border-radius: 25px;
    background-color: #ffffff;
    border: 2px solid #fd8300;
@@ -502,7 +495,6 @@ a.in:hover {
    text-align: center;
    font-size: 30px;
    letter-spacing: 2px;
-   line-height: 24px;
    text-transform: uppercase;
    color: #ffffff;
    font-weight: 700;
@@ -511,28 +503,24 @@ a.in:hover {
 
 .advertisement p {
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    color: #ffffff;
-   font-family: "Arial";
    text-align: center;
 }
 
 .price {
    display: inline-block;
    font-size: 40px;
-   line-height: 24px;
    color: #fd8300;
    font-weight: bold;
-   font-family: "Arial";
 }
 
 .value {
    margin-left: 10px;
    font-size: 24px;
-   line-height: 24px;
    color: #fd8300;
    font-weight: bold;
-   font-family: "Arial";
+   
 }
 
 .main-block {
@@ -595,7 +583,6 @@ figcaption>a:hover~h3 {
 .about-us h1 {
    margin-bottom: 30px;
    font-size: 30px;
-   line-height: 24px;
    color: #24242b;
    font-weight: 700;
    font-family: "Roboto Slab";
@@ -603,19 +590,19 @@ figcaption>a:hover~h3 {
 
 .about-us p {
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    color: #666666;
-   font-family: "Arial";
+   
 }
 
 .about-us a {
    display: inline-block;
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    text-decoration: underline;
    color: #fd8300;
    font-weight: bold;
-   font-family: "Arial";
+   
    transition: 0.3s;
 }
 
@@ -652,7 +639,7 @@ figcaption>a:hover~h3 {
    font-size: 14px;
    line-height: 1.7em;
    color: #25252c;
-   font-family: "Arial";
+   
    transition: 0.3s;
 }
 
@@ -726,9 +713,9 @@ figcaption>a:hover~h3 {
 .bottom-nav a {
    text-decoration: none;
    font-size: 14px;
-   line-height: 26px;
+   line-height: 1.8em;
    color: #666666;
-   font-family: "Arial";
+   
    transition: 0.3s;
 }
 
@@ -745,9 +732,9 @@ figcaption>a:hover~h3 {
    text-align: center;
    padding: 15px 0;
    font-size: 13px;
-   line-height: 18px;
+   line-height: 1.3em;
    color: #9999a6;
-   font-family: "Arial";
+   
    text-align: center;
 }
 
@@ -761,7 +748,6 @@ tbody tr:hover {
 
 .table h2 {
    font-size: 24px;
-   line-height: 24px;
    color: #24242b;
    font-weight: 700;
    font-family: "Roboto Slab", sans-serif;
@@ -770,9 +756,9 @@ tbody tr:hover {
 .table p {
    margin-bottom: 30px;
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    color: #666666;
-   font-family: "Arial";
+   
 }
 
 .table table {
@@ -785,7 +771,7 @@ tbody tr:hover {
 .table th {
    padding: 0px 40px 0 40px;
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    color: #ffffff;
    font-weight: 700;
    font-family: "Roboto Slab";
@@ -804,9 +790,9 @@ tbody tr:hover {
    text-align: center;
    padding: 8px 15px 8px 15px;
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    color: #666666;
-   font-family: "Arial";
+   
 }
 
 .table td+td {
@@ -831,39 +817,39 @@ tbody tr:hover {
 
 .table-bottom span {
    font-size: 13px;
-   line-height: 21px;
+   line-height: 1.6em;
    color: #666666;
-   font-family: "Arial";
+   
 }
 
 .table-bottom a {
    display: inline-block;
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    color: #1f1f56;
    text-decoration: none;
    font-weight: bold;
-   font-family: "Arial";
+   
    transition: 0.3s;
 }
 
 .table-bottom a:hover {
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    text-decoration: underline;
    color: #fd8300;
    font-weight: bold;
-   font-family: "Arial";
+   
 }
 
 .columns {
+   padding-top: 41px;
    z-index: 5;
 }
 
 .main h1 {
    margin-bottom: 27px;
    font-size: 24px;
-   line-height: 24px;
    color: #24242b;
    font-weight: 700;
    font-family: "Roboto Slab";
@@ -872,7 +858,7 @@ tbody tr:hover {
 .first-p {
    margin-bottom: 20px;
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    color: #24242b;
    font-weight: 700;
    font-family: "Roboto Slab";
@@ -881,19 +867,18 @@ tbody tr:hover {
 .second-p {
    margin-bottom: 15px;
    font-size: 14px;
-   line-height: 21px;
+   line-height: 1.5em;
    color: #666666;
-   font-family: "Arial";
+   
 }
 
 .first-a,
 .second-a {
    font-size: 18px;
-   line-height: 24px;
+   line-height: 1.3em;
    text-decoration: none;
    color: #25252c;
    font-weight: bold;
-   font-family: "Arial";
    transition: 0.3s;
 }
 
@@ -911,17 +896,17 @@ tbody tr:hover {
 .third-a {
    display: inline-block;
    font-size: 16px;
-   line-height: 24px;
+   line-height: 1.5em;
    text-decoration: underline;
    color: #25252c;
-   font-family: "Arial";
+   
    transition: 0.3s;
 }
 
 .first-p-1 {
    margin-bottom: 22px;
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    color: #24242b;
    font-weight: 700;
    font-family: "Roboto Slab";
@@ -930,9 +915,9 @@ tbody tr:hover {
 .second-p-1 {
    margin-bottom: 14px;
    font-size: 14px;
-   line-height: 21px;
+   line-height: 1.5em;
    color: #666666;
-   font-family: "Arial";
+   
 }
 
 .first-a-1 {
@@ -940,10 +925,9 @@ tbody tr:hover {
    margin-bottom: 16px;
    font-size: 18px;
    text-decoration: none;
-   line-height: 24px;
+   line-height: 1.3em;
    color: #25252c;
    font-weight: bold;
-   font-family: "Arial";
    transition: 0.3s;
 }
 
@@ -955,16 +939,16 @@ tbody tr:hover {
 .second-p-2 {
    margin-bottom: 19px;
    font-size: 14px;
-   line-height: 21px;
+   line-height: 1.5em;
    color: #666666;
-   font-family: "Arial";
+   
 }
 
 .third-p {
    font-size: 14px;
-   line-height: 21px;
+   line-height: 1.5em;
    color: #666666;
-   font-family: "Arial";
+   
 }
 
 .map {
@@ -986,7 +970,7 @@ tbody tr:hover {
 .map p {
    margin-left: 30px;
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    color: #24242b;
    font-weight: 700;
    font-family: "Roboto Slab";
@@ -998,7 +982,7 @@ tbody tr:hover {
 
 .form p {
    font-size: 14px;
-   line-height: 24px;
+   line-height: 1.7em;
    margin-bottom: 20px;
    color: #24242b;
    font-weight: 700;
@@ -1046,24 +1030,18 @@ textarea {
 
 ::placeholder {
    font-size: 13px;
-   line-height: 21px;
+   line-height: 1.6em;
    color: #9999a6;
    font-style: italic;
-   font-family: "Arial";
+   
 }
 
 .third-in textarea {
    resize: vertical;
    margin-bottom: 12px;
-   z-index: 3;
-}
-
-.form-bottom {
-   z-index: 0;
 }
 
 .form-bottom button {
-   position: absolute;
    border-radius: 21px;
    border: none;
    padding: 9px 30px;
@@ -1073,7 +1051,7 @@ textarea {
    line-height: 1.7em;
    color: #ffffff;
    font-weight: bold;
-   font-family: "Arial";
+   
    text-align: center;
    transition: all .3s ease;
 }
@@ -1087,30 +1065,38 @@ textarea {
 .form-bottom label {
    display: flex;
    align-items: center;
+   column-gap: 25px;
+   font-size: 13px;
+   line-height: 1.6em;
+   color: #666666;
+}
+
+.parent {
+   display: block;
+   position: relative;
 }
 
 .form-bottom input {
+   position: absolute;
+   top: 50%;
+   left: 50%;
    appearance: none;
    width: 15px;
    height: 15px;
    border: 1px solid #c5c5d4;
    border-radius: 3px;
    background-color: #fff;
+   transform: translate(-50%, -50%);
 }
 
-.parent {
-   position: relative;
-}
 
-.form-bottom:checked + .arrow {
+.form-bottom input:checked+.arrow {
    position: absolute;
-   top: ;
-   left: ;
-   display: block;
-   width: 9px;
-   height: 7px;
-   border-top: 4px solid #1f1f56;
-   border-left: 2px solid #1f1f56;
-   transform: translate() rotate();
-   z-index: 52;
+   top: 50%;
+   left: 50%;
+   width: 8px;
+   height: 5px;
+   border-top: 2px solid #1f1f56;
+   border-right: 2px solid #1f1f56;
+   transform: translate(-50%, -50%) rotate(135deg);
 }
